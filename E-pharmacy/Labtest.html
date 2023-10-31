@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTest</title>
+    <link rel="icon" type="image/png" href="images/E-pharmacyfavicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+       /* --Navbar-- */
+.font{
+    font-family: 'Open Sans', sans-serif;
+}
+.heading{
+    font-size: 22px;
+    font-weight: 600;
+    color:#4f585e;
+}
+.spaceup
+{
+    margin:auto;
+    margin-top: 80px;
+    width:90%;
+}
+#navbar{
+    position: sticky;
+    top:0px;
+    background-color: #10847e;
+    border:1px solid transparent;
+    z-index: 4;
+}
+#upperNav{
+    position: absolute;
+    width:105%;
+    /* border:1px solid red; */
+    margin-top: 15px;
+    z-index: 1;
+}
+#upperNav>div>button:last-child{
+    height:60px;
+    width:50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f4f7fb;
+    border: 0px;
+
+}
+#upperNav>div:first-child{
+    /* border: 1px solid red; */
+    display: flex;
+    width:90%;
+    margin: auto;
+
+}
+#upperNav>div>img{
+    width:9%;
+    height: 10%;
+}
+#NavPincode
+{
+ border:0px;
+  color: #10847e;
+  padding-left: 10px;
+  font-family: sans-serif;
+  background-color: white;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+input{
+    font-size: 20px;
+    width:46%;
+    border: 0px;
+    
+}
+#lowerNav{
+    /* border:1px solid blue; */
+    position: relative;
+    color:white;
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-around;
+    font-size: 17px;
+    font-family: 'Noto Sans', sans-serif;
+    margin: auto;
+    transition: 0.5s;
+}
+#lowerNav>div:first-child{
+    /* border:1px solid red; */
+    display: flex;
+    margin-left: 13%;
+    
+}
+#lowerNav>div:first-child>div{
+    padding:20px 15px 10px 20px;
+    /* border:1px solid red; */
+    margin: auto;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.highlight
+{
+    position: relative;
+    /* border:1px solid black; */
+    height:3px;
+    margin: 0px;
+    top:10px;
+    
+}
+
+#lowerNav>div>div:hover > .highlight
+{
+   background-color: white;
+   transition: 350ms;
+}
+#lowerNav>div:nth-child(2)>div:hover > .highlight
+{
+   background-color: white;
+}
+#lowerNav>div:last-child{
+    /* border:1px solid red; */
+    display:flex;
+    align-items: center;
+
+}
+#lowerNav>div:last-child>div{
+    /* border:1px solid blue; */
+    padding:22px;
+    margin-bottom: -10px;
+}
+#login{
+    display: flex;
+    margin-left: 15px;
+}
+#login+div{
+    display: flex;
+}
+#login p,#login+div p{
+    margin: auto;
+}
+
+        #slider {
+            /* border: 1px solid red; */
+            width: 80%;
+            height: 270px;
+            margin: auto;
+            margin-top: 30px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #slider>img {
+            width: 90%;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+
+        #test {
+            /* border: 1px solid red; */
+            width: 80%;
+            height: 150px;
+            margin: auto;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 80px;
+            gap: 30px;
+
+        }
+
+        #test>div {
+            border: 1px solid black;
+            border-radius: 50px;
+
+        }
+
+        .all {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .all>img {
+            width: 20%;
+            height: 30%;
+            margin-left: 20px;
+
+        }
+
+        .all>h3 {
+            margin-left: 20px;
+            color: #4F585E;
+        }
+
+        #plus {
+            /* border: 1px solid red; */
+            width: 80%;
+            height: 60px;
+            margin: auto;
+            margin-top: -30px;
+            display: flex;
+            background-color: rgb(133, 115, 225);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #plus>img {
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+        #plus>p {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        #a {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-left: 120px;
+            font-weight: bold;
+            color: rgb(79, 88, 94);
+
+        }
+
+        #corona {
+            border: 1px solid rgb(213, 218, 223);
+            ;
+            width: 20%;
+            height: 200px;
+            margin-left: 120px;
+            border-radius: 5px;
+
+
+        }
+
+        #corona>img {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        #corona>h3 {
+            margin-left: 10px;
+            line-height: 5px;
+            color: rgb(79, 88, 94);
+        }
+
+        #corona>div {
+            /* border: 1px solid red; */
+            display: flex;
+            margin-top: -20px;
+            text-decoration: none;
+
+        }
+
+        #corona>div>h2+p {
+            margin-left: 10px;
+            margin-top: 24px;
+            color: rgb(79, 88, 94);
+        }
+
+        #corona>div>h2 {
+            margin-left: 10px;
+            color: rgb(79, 88, 94);
+        }
+
+        #corona>h3+p {
+            margin-left: 10px;
+            color: rgb(79, 88, 94);
+
+        }
+
+
+        #b {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-left: 120px;
+            font-weight: bold;
+            color: rgb(79, 88, 94);
+        }
+
+        #partner {
+            border: 1px solid rgb(213, 218, 223);
+            ;
+            width: 20%;
+            height: 170px;
+            margin-left: 120px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #partner>img {
+            width: 30%;
+            margin-top: 20px;
+            margin-left: 15px;
+            border: 1px solid rgb(202, 212, 212);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #partner>h3 {
+            margin-left: 10px;
+            line-height: 5px;
+            color: rgb(79, 88, 94)
+        }
+
+        #partner>p {
+            margin-left: 10px;
+            color: rgb(79, 88, 94);
+            font-size: 14px;
+
+        }
+
+        #c {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-left: 120px;
+            font-weight: bold;
+            color: rgb(79, 88, 94);
+        }
+
+        #packages {
+            width: 180%;
+            height: 220px;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+            border-radius: 5px;
+            gap: 20px;
+            position: relative;
+            transition: all 0.5s;
+
+        }
+        #control{
+            position: absolute;
+            display: flex;
+            right: 20px;
+            left: 30px;
+
+        }
+        #left{
+            position: absolute;
+            left: 90px;
+            top: 100px;
+            background-color:transparent;
+            border: 1px solid rgb(213, 204, 204);
+            width: 2%;
+            height: 20px;
+            text-align:center;
+            font-size: 20px;
+            color: teal;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #right{
+            position: absolute;
+            right: 100px;
+            top: 100px;
+            background-color:transparent;
+            border: 1px solid rgb(213, 204, 204);
+            width: 2%;
+            height: 20px;
+            text-align:center;
+            font-size: 20px;
+            color: teal;
+            border-radius: 10px;
+            cursor: pointer; 
+        }
+       #display{
+      /* border: 1px solid black; */
+       width: 80%;
+      margin: auto;
+       overflow: hidden;
+       }
+
+        #packages>div {
+            border: 1px solid rgb(210, 199, 199);
+            width: 25%;
+            height: 200px;
+            border-radius: 5px;
+          
+            /* margin-left: 10px; */
+        }
+
+        .cheakup {
+            display: flex;
+            /* border: 1px solid blue; */
+            margin-top: -20px;
+        }
+
+        .cheakup>h2 {
+            margin-left: 10px;
+
+        }
+
+        .cheakup>h2+p {
+            margin-left: 10px;
+            color: rgb(117, 119, 121);
+            margin-top: 22px;
+        }
+
+        #packages>div>img {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        #packages>div>h3 {
+            margin-top: 20px;
+            margin-left: 10px;
+            line-height: 10px;
+            font-size: 18px;
+        }
+
+        #packages>div>h4 {
+            margin-top: 20px;
+            margin-left: 10px;
+            line-height: 8px;
+            color: rgb(99, 103, 106);
+        }
+
+        #packages>div>p {
+            margin-top: 20px;
+            margin-left: 10px;
+            line-height: 8px;
+            color: rgb(117, 119, 121);
+        }
+
+        #pera {
+            width: 80%;
+            /* border: 1px solid black; */
+            height: auto;
+            margin: auto;
+        }
+
+        #pera>h3 {
+            color: #4F585E
+        }
+
+        #pera>p {
+            font-size: 18.4px;
+            color: #4F585E
+        }
+
+        #pera>li {
+            line-height: 25px;
+            font-size: 18px;
+          
+
+        }
+
+        #faq {
+            margin-left: 120px;
+            color: #4F585E
+
+        }
+
+        .layout {
+            width: 80%;
+            margin: auto;
+        }
+
+        .section {
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+        }
+
+        .accordion__question p {
+            margin: 5px;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        .accordion__answer p {
+            margin: 5px;
+            padding: 10px;
+            font-size: large;
+            font-family: 'Open Sans', sans-serif;
+            background-color: bisque;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+        }
+
+        .section:hover {
+            cursor: pointer;
+            border: 0.5px solid coral;
+        }
+
+        .accordion__answer {
+            display: none;
+        }
+
+        .section.active .accordion__answer {
+            display: block;
+        }
+        #happy{
+            /* border: 1px solid red; */
+            background-color:rgb(244,247,251);
+            width:100%;
+            margin-top: 50px;
+            position: relative;
+            transition: all 0.5s;
+        }
+        #happy>h1{
+            color: rgb(79,88,94);
+            margin-left: 120px;
+        }
+        #our{
+            width: 200%;
+            height:300px;
+            /* border: 1px solid blue; */
+            margin: auto;
+            display: flex;
+           
+        
+        }
+        #custm{
+            /* border: 1px solid burlywood; */
+            width: 80%;
+            height: 300px;
+            margin: auto;
+            overflow: hidden;
+
+        }
+        #our>div{
+            /* border: 1px solid black; */
+            width: 50%;
+            height:280px;
+            margin: auto;
+        }
+        #cont{
+            position: absolute;
+            display: flex;
+            right: 20px;
+            left: 30px;
+        }
+        #lef{
+            position: absolute;
+            left: 90px;
+            top: 200px;
+            background-color:transparent;
+            border: 1px solid rgb(213, 204, 204);
+            width: 2%;
+            height: 20px;
+            text-align:center;
+            font-size: 20px;
+            color: teal;
+            border-radius: 10px;
+        }
+        #lef>img{
+            width: 50%;
+        }
+        #rig>img{
+            width: 30%;
+        }
+        #lef>img:hover{
+         cursor: pointer;
+        }
+        #rig>img:hover{
+            cursor: pointer;
+        }
+        #rig{
+            position: absolute;
+            right: 105px;
+            top: 200px;
+            background-color:transparent;
+            border: 1px solid rgb(213, 204, 204);
+            width: 2%;
+            height: 20px;
+            text-align:center;
+            font-size: 20px;
+            color: teal;
+            border-radius: 10px;
+        }
+        .patient{
+            display: flex;
+            /* border: 1px solid green; */
+            transition: all 0.5s;
+        }
+        .patient>div>img{
+            width:100px;
+        }
+        .patient>div>h3+p{
+            line-height: 2px;
+            color:rgb(136,151,162)
+
+        }
+        .patient>div>h3+p+p{
+            color:rgb(136,151,162)
+
+        }
+        .patient>div>h3{
+            color:rgb(79,88,94)
+
+        }
+
+        .patient>div:nth-child(2){
+            /* border: 1px solid teal; */
+            width: 70%;
+            font-size:17px;
+            margin-left: 10px;
+            line-height: 25px;
+        }
+        #review{
+            /* border: 1px solid red; */
+            width: 100%;
+            height:400px;
+            margin-top: 20px;
+            position: relative;
+            transition: all 0.5s;
+        }
+        .report{
+            width: 200%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            /* height: 300px; */
+            /* margin-top: 30px; */
+            display: flex;
+            gap: 30px;
+            /* margin-left: 35px; */
+        }
+        #move{
+            /* border: 1px solid blueviolet; */
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            overflow: hidden;
+        
+        }
+        #mover{
+            position: absolute;
+            left: 20px;
+            right: 20px;
+        }
+        #prev{
+            position: absolute;
+            left: 90px;
+            top: 150px;
+            background-color:transparent;
+            border: 1px solid rgb(213, 204, 204);
+            width: 2%;
+            height: 20px;
+            text-align:center;
+            font-size: 20px;
+            color: teal;
+            border-radius: 10px;
+        }
+        #prev>img{
+            width: 50%;
+           
+        }
+        #prev>img:hover{
+           cursor: pointer;
+           
+        }
+        #next>img{
+            width: 40%;
+        }
+        #next>img:hover{
+            cursor: pointer;
+        }
+        #next{
+            position: absolute;
+            right: 105px;
+            top: 150px;
+            background-color:transparent;
+            border: 1px solid rgb(213, 204, 204);
+            width: 2%;
+            height: 20px;
+            text-align:center;
+            font-size: 20px;
+            color: teal;
+            border-radius: 10px;
+        }
+        .conve{
+            /* border: 1px solid teal; */
+            width: 80%;
+            height:280px;
+            
+
+        }
+        .conve>img{
+            width:50%;
+            margin-left: 10px;
+        }
+        .conve>p{
+            font-size: 19px;
+            margin-left: 10px;
+            line-height: 25px;
+            color:rgb(136,151,162)
+        }
+        .conve>h3{
+            font-size: 19px;
+            margin-left: 10px;
+            color:rgb(79,88,94)
+        }
+        #trusted{
+            /* border: 1px solid teal; */
+            width: 100%;
+            height:400px;
+           
+        }
+       #labs{
+        /* border: 1px solid teal; */
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        margin-top: 30px;
+        display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 300px;
+            gap: 10px;
+       }
+       #labs>div{
+        /* border: 1px solid black; */
+        width:90%;
+       }
+       #labs>div>h3{
+        font-size: 19px;
+            margin-left: 10px;
+            color:rgb(79,88,94);
+            
+            
+       }
+       #labs>div>p{
+        font-size: 18.4px;
+            margin-left: 10px;
+            line-height: 25px;
+            color:rgb(136,151,162)
+       }
+       #labs>div>img{
+        margin-left: 10px;
+        margin-top: 10px;
+       }
+       #down{
+           /* border: 1px solid teal;  */
+           width: 100%;
+           height:400px;
+           display: flex;
+           
+           
+        }
+        #ima{
+            /* border: 1px solid blue; */
+            width: 30%;
+            height: 350px;
+            margin-top: 30px;
+            margin-left: 60px;
+
+        }
+        #ima>img{
+            width: 50%;
+            height: 350px;
+            margin-left:100px;
+        }
+         #download {
+      height: 200px;
+      /* border: 1px solid black; */
+      width: 40%;
+      margin-top: 30px;
+      margin-left:40px;
+
+    }
+    
+    #download> :first-child {
+      width: 50%;
+      height: 25%;
+      /* border: 1px solid red; */
+      margin: auto;
+    margin-left: 100px;
+    }
+    
+    #download> :first-child>p {
+      line-height: 25px;
+      font-size: 23px;
+      color: grey;
+      text-align: left;
+    }
+    
+    #download> :nth-child(2) {
+      margin-top: 25px;
+      width: 60%;
+      height: 45%;
+      /* border: 1px solid red; */
+      display: flex;
+      margin: auto;
+      margin-top: 15px;
+    }
+    
+    #download> :nth-child(2)> :nth-child(2) {
+      margin-left: 95px;
+    }
+    
+    .app a {
+      width: 170%;
+      height: 60%;
+      /* border: 1px solid black; */
+      border-radius: 5px;
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      background-color: #4f585e;
+      cursor: pointer;
+    }
+    
+    .app div {
+      height: 55%;
+      width: 85%;
+      /* border: 1px solid red; */
+      display: flex;
+      background-color: #4f585e;
+    }
+    
+    .app p {
+      color: white;
+      font-size: 15px;
+      margin-left: 10px;
+      margin-top: 9px;
+    }
+    #endpart{
+    background-color: #f4f7fb;
+  
+  }
+  #fourthdiv {
+    height: 700px;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    
+  }
+  
+  #kolo {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    height: 75%;
+    margin-top: 50px;
+    display: flex;
+  }
+  .footerheadings{
+    font-size: 18px;
+    margin-top: 2px;
+    color: rgb(79,88,94);
+  }
+  
+  .CFN {
+    height: 100%;
+    width: 90%;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .CFN>div {
+    height: 100%;
+    width: 200px;
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+    margin-left: 50px;
+  }
+  
+  .CFN>div>p {
+    margin-top: 18px;
+    font-size: 18px;
+    color: #4f585e;
+  }
+  
+  
+  #followus {
+    height: 20%;
+    margin-left: 90px;
+    /* border: 1px solid red; */
+    width: 40%;
+  }
+  
+  #followus>h3 {
+    font-family: Open Sans, sans-serif;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+  }
+  
+  #followus>div {
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+  }
+  
+  #followus>div>a {
+    margin-right: 30px;
+    color: #10847e;
+  }
+  
+  #partners {
+    height: 180px;
+    width: 90%;
+    margin: auto;
+    margin-left: 170px;
+    margin-top: 20px;
+    /* border: 2px solid black; */
+    font-family: sans-serif;
+  }
+  
+  #partners>div {
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .logos {
+    height: 100%;
+    width: 67%;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+  }
+  
+  .logos>img {
+    height: 28px;
+    /* width: 42px; */
+    margin-right: 21px;
+  }
+  
+  #rights {
+    height: 100%;
+    width: 20%;
+    /* border: 1px solid red; */
+    margin-left: 20px;
+  }
+  
+  #rights>p {
+    font-size: 17px;
+    color: #4f585e;
+  }
+  #h4name{
+    font-size: 19px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+
+    </style>
+</head>
+
+<body>
+    <!-- -- Navbar start-- -->
+    <div id="navbar">            
+        <div id="upperNav">
+            <div>
+            <img src="" alt="" style="width:2px; height:2px;"  />
+           <P style="font-style:italic; font-size:50px; color:white;">E-pharmacy</P> 
+     
+            <button id="NavPincode" style="height:40px;">
+                Select Pincode
+                <span class="material-symbols-outlined">
+                arrow_drop_down
+                </span>
+            </button>
+            <input type="search" placeholder="| Select medicines/Healthcare products" style="height:40px;">
+            <button>
+                <span class="material-symbols-outlined" style="height:40px;">
+                    search
+                </span>
+            </button>
+            </div>
+        </div>
+        <div id="lowerNav">
+            <div id="scroll">
+                <div>
+                    <p id="orderMedicinebtn">Order Medicines</p> 
+                    <div class="highlight"></div>
+                </div>
+                <div id="Health">Healthcare Products
+                    <div class="highlight"></div>
+                </div>
+                <div id="labtestb">Lab Tests
+                    <div class="highlight"></div>
+                </div>
+                <div id="Rtpcr">RTPCR
+                    <div class="highlight"></div>
+                </div>
+            </div>
+            <div>
+                <div id="offer">
+                    <img src="images/discount.png" alt="flaticon">
+                    Offers</div>
+                <div id="login">
+                    <img src="images/loginsignup.svg" alt="login/signup">
+                    <p>Login/Signup</p>
+                </div>
+                <div id="cart">
+                    <img src="images/cart.svg" alt="">
+                    <p>Cart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --Navbar end-- -->
+    
+    <div id="test">
+        <div class="all">
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/6b3d644c.svg" alt="">
+            <h3>All Tests</h3>
+        </div>
+        <div class="all">
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Health Packages</h3>
+        </div>
+        <div class="all">
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/d4d62fbf.svg" alt="">
+            <h3>Upload Prescription</h3>
+        </div>
+        <div class="all">
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/4ed59722.svg" alt="">
+            <h3>Book On Call</h3>
+        </div>
+
+    </div>
+    <div id="plus">
+        <img src="https://assets.E-pharmacy.in/web-assets/dist/3864b471.svg" alt="">
+        <p>Save Flat 5% extra on medicines & enjoy Free Delivery With PLUS Membership</p>
+    </div>
+    <p id="a"> Recently Searched By You</p>
+     <a href="RTPCR.html">
+    <div id="corona">
+        <img src="https://assets.E-pharmacy.in/web-assets/dist/6b3d644c.svg" alt="">
+        <h3>
+            Covid-19 RTPCR
+        </h3>
+        <h3>
+            (Coronavirus SARS - CoV2)
+        </h3>
+        <p>Available at 1 certified lab</p>
+        <div>
+            <h2>₹700</h2>
+            <p>onwards</p>
+        </div>
+
+
+    </div>
+  </a>
+    <p id="b">Certified Partners Lab</p>
+    <div id="partner">
+        <img src="https://s3.ap-south-1.amazonaws.com/pe-neon-public/diagnostics/staging/CompanyLogo/e24cc996bf8f3cb48d084a04d041df24.jpg"
+            alt="">
+        <h3>Thyrocare(Covid RTPCR)</h3>
+        <p>NABL,CAP Certified</p>
+    </div>
+    <div id="afordable">
+      <p id="c">Affordable Health Packages</p>
+      <div id="control">
+        <div id="left"><</div>
+        <div id="right">></div>
+      </div>
+      <div id="display">
+       
+     <div id="packages">
+        <div>
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Advance Full Body Cheakup</h3>
+            <h4>Available at 1 certified lab</h4>
+            <p>Includes 80 tests</p>
+            <div class="cheakup">
+                <h2>₹900</h2>
+                <p>onwards</p>
+            </div>
+
+        </div>
+        <div>
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Advance Renal Cheakup</h3>
+            <h4>Available at 1 certified lab</h4>
+            <p>Includes 9 tests</p>
+            <div class="cheakup">
+                <h2>₹625</h2>
+                <p>onwards</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Alcohol Cheakup</h3>
+            <h4>Available at 1 certified lab</h4>
+            <p>Includes 80 tests</p>
+            <div class="cheakup">
+                <h2>₹900</h2>
+                <p>onwards</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Advance Full Body Cheakup</h3>
+            <h4>Available at 1 certified lab</h4>
+            <p>Includes 80 tests</p>
+            <div class="cheakup">
+                <h2>₹900</h2>
+                <p>onwards</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Advance Full Body Cheakup</h3>
+            <h4>Available at 1 certified lab</h4>
+            <p>Includes 80 tests</p>
+            <div class="cheakup">
+                <h2>₹900</h2>
+                <p>onwards</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets.E-pharmacy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Advance Full Body Cheakup</h3>
+            <h4>Available at 1 certified lab</h4>
+            <p>Includes 80 tests</p>
+            <div class="cheakup">
+                <h2>₹900</h2>
+                <p>onwards</p>
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+    <div id="pera">
+        <h3>The (Pharm)Easy Way To Book Lab Tests Online</h3>
+        <p>Book Diagnostics Lab Test Online. Get doorstep sample collection</p>
+        <h3>Lab Test Booking Made Simple</h3>
+        <p>One of the most popular services E-pharmacy offers is diagnostic testing. People need to book pathological
+            tests for many reasons. But before booking, they wonder if the diagnostic centre can be trusted to produce
+            accurate results and how long they might have to wait in a queue to get tested.</p>
+        <p>To bypass these hassles, E-pharmacy has set up an extensive network of reputed pathological laboratories in
+            India. One such lab is Thyrocare. With Thyrocare on board, we can give you access to a wide network of
+            diagnostic laboratories.We also offer a home collection of samples as well. Bid adieu to anxious days of
+            wondering where to book diagnostic tests and embrace the E-pharmacy way.</p>
+        <h3>Lab tests at your doorstep</h3>
+        <p>To ease your anxieties, E-pharmacy offers the facility of doorstep collection. The technician will come to
+            your house to collect samples. And all safety precautions are maintained. A fresh collection kit and/or
+            needle will be used so that there is no contamination of samples of the spread of diseases. We use special
+            ice boxes that meet NABL guidelines to transport your samples. The reports will be sent to you online. That
+            means you won’t have to travel to the diagnostic lab to collect your reports.</p>
+        <h3>How can you book diagnostic tests online?</h3>
+        <p>Booking a test on E-pharmacy is simple</p>
+        <li>
+            Visit <a href="">https://E-pharmacy.in/diagnostics</a> or click on Lab Tests on the E-pharmacy website or app.
+
+        </li>
+        <li>
+            Upload your prescription or choose the lab test from the search box.
+        </li>
+        <li>
+            Alternatively, you can call our customer service team on 7022000900 and they will make the booking for you
+        </li>
+
+
+        <h3>Looking to book a pathology test? Here’s how E-pharmacy can help!</h3>
+        <p>Online diagnostic tests work as smoothly as clockwork. Once you’ve booked the pathology test you need with
+            the diagnostic centre you prefer, you will get a confirmation on your registered e-mail id and SMS. The
+            backend support team might also call you to confirm the booking.Post this our expert technician will arrive
+            at your place at the selected slot and collect your sample for processing at our state of the art labs.
+            Reports will be shared with you over SMS and will also be available in your account on app/web.</p>
+        <h3>Why choose E-pharmacy to book lab tests?</h3>
+        <p>We can give you reasons galore for choosing E-pharmacy-</p>
+        <li>
+            2 Lac+ happy customers
+        </li>
+        <li>
+            Safe home sample collection
+        </li>
+        <li>
+            Up to 70% OFF
+        </li>
+        <li>
+            Certified & 100% Automated labs
+        </li>
+        <li>
+            Timely and accurate reports
+        </li>
+        <li>
+            500+ tests and health packs to choose from
+        </li>
+        <p>
+            Now that you know why E-pharmacy can be your trusted diagnostic test booking partner, don’t wait, download
+            the E-pharmacy app today and book a health check right away.
+        </p>
+    </div>
+    <h3 id="faq">Frequently Asked Questions</h3>
+    <div class="layout">
+        <div class="section">
+            <div class="accordion__question">
+                <p>What Are the covid precautions PharmaEasy is taking for the testing purpose? </p>
+            </div>
+            <div class="accordion__answer">
+                <p>E-pharmacy takes safety of our patients and staff very seriously. Which is why since the onset of
+                    COVID-19, we formulated a 5-step safety program to offer 100% protection to all stakeholders.. Along
+                    with this, NABL guidelines are followed to ensure samples are not corrupted during collection,
+                    transportation or storage. Here are the safety measures that we adhere to-Vigilance about face
+                    masksHand hygiene including sanitization and wearing of glovesFrequent thermal checksHygienic sample
+                    collectionCareful disposal of wasteCheck flu symptoms with patients.
+                </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="accordion__question">
+                <p>Are the phleboltomists sufficiently qualified.</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    E-pharmacy owns 18 state-of-the-art diagnostic laboratories in the country with an inhouse fleet of
+                    500 phlebotomists across 2500+ pincodes. We have a dedicated training team for the technicians which
+                    constantly track their performance on parameters like on time arrival, painless collection,
+                    adherence to NABL guidelines for sample storage & transport and customer support. We have a very
+                    strict hiring process which ensures that every sample collection experience is best in class.
+                </p>
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="accordion__question">
+                <p>How Efficient is the sample collection and analysis process.</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    Utmost care is taken to collect samples while maintaining complete hygiene. Only new and fresh
+                    collection kits and needles are used. After collection, the sample is immediately transferred into
+                    an icebox to prevent degradation and bacterial build-up which may lead to inaccurate diagnosis. The
+                    samples are barcode tagged to prevent mix up and in the laboratories, technicians use high-end,
+                    state-of-the-art devices to analyse the samples.
+                </p>
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="accordion__question">
+                <p>What are the lab test essential?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    Lab tests or diagnostic tests are recommended by doctors when they suspect that there might be
+                    something wrong with your health. Samples of your blood, stool, urine, or mucus can reveal a lot
+                    about the state of your health when analysed with special devices. Once the problem is detected,
+                    your doctor can diagnose and put you on medication or suggest a course of treatment.
+                </p>
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="accordion__question">
+                <p>How long does it take for the report to be deliverd</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    It takes 24-48 hours for the lab to prepare your report and have it delivered to you.
+                </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="accordion__question">
+                <p>How should one prepare for lab tedt?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    Different tests have different requirements. Some may need to be on an empty stomach whereas,
+                    for some other tests, you may need to consume food before the sample is collected. Speak with
+                    your doctor regarding what you need to do to prepare for a lab test. Let your doctor know if you
+                    are already on any medication.
+                </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="accordion__question">
+                <p>How Are Lab test reports interpreted?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    The reports that our labs will deliver to you will be quite detailed. There will be charts of
+                    reference ranges to help you understand the report and a statement from a qualified doctor. But,
+                    once you receive your report, it is best to consult your doctor and ask him/her to explain it to
+                    you.
+
+                </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="accordion__question">
+                <p>
+                    If the lab test results are with in normal range,does tat mean no illness has been deceted?
+                </p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    If your reports are within normal range, it is certainly good news. But normal results do not
+                    always give you a clean bill of health. If symptoms persist, your doctor will recommend other
+                    tests to detect what is triggering the unusual signs.
+                </p>
+            </div>
+        </div>
+    </div>
+   
+   
+   
+    
+   
+            <div id="rights">
+               <p> &#169 2022 E-pharmacy. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<script src="labtest.js">
+</script>
